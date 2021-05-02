@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:xafe/app/sign_up/widgets/page_indicator.dart';
 
 import '../../../cores/constants/styles.dart';
 import '../../../cores/widgets/xafe_appbar.dart';
 import '../../../cores/widgets/xafe_button.dart';
 import '../../../cores/widgets/xafe_input.dart';
 import '../widgets/build_form.dart';
+import '../widgets/page_indicator.dart';
 
 /// Sign up screen
 class SignUpScreen extends StatefulWidget {
@@ -84,7 +84,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             hintText: 'Enter your email address',
                             validator: (email) {
                               if (email.isEmpty) return 'Email is required';
-                              if (!RegExp(EMAIL_REGEX).hasMatch(email)) {
+                              if (!RegExp(emailRegex).hasMatch(email)) {
                                 return 'Please enter a valid email';
                               }
                               return null;

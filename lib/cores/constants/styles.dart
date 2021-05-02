@@ -9,5 +9,6 @@ TextStyle textStyle = TextStyle(
   color: cardColor,
 );
 
-const String EMAIL_REGEX =
+/// Email Regex pattern
+const String emailRegex =
     r"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";
