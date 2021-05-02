@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../../cores/constants/routes.dart';
 import '../../../../cores/constants/styles.dart';
 import '../../../../cores/widgets/xafe_appbar.dart';
 import '../../../../cores/widgets/xafe_button.dart';
@@ -82,6 +83,7 @@ class SignInScreen extends StatelessWidget {
                   text: 'Login',
                   onPressed: () {
                     if (_signInformkey.currentState.validate()) return;
+                    Navigator.pushNamed(context, dashboardScreen);
                   },
                 ),
               ),

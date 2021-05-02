@@ -6,3 +6,6 @@ const String signUpScreen = 'SIGN_UP_SCREEN';
 
 /// Sign In Screen route name
 const String signInScreen = 'SIGN_IN_SCREEN';
+
+/// Dashboard Screen route name
+const String dashboardScreen = 'DASHBOARD_SCREEN';
