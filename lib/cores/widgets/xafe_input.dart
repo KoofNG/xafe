@@ -7,6 +7,9 @@ class XafeInputField extends StatelessWidget {
   /// [Boolean] is the field a password field
   final bool isPassword;
 
+  /// [Boolean] is the field filled
+  final bool isFilled;
+
   /// [String] hinttext as placeholder
   final String hintText;
 
@@ -29,6 +32,7 @@ class XafeInputField extends StatelessWidget {
   XafeInputField({
     Key key,
     this.isPassword = false,
+    this.isFilled = false,
     this.hintText,
     this.suffixIcon,
     this.validator,
@@ -37,25 +41,25 @@ class XafeInputField extends StatelessWidget {
     this.controller,
   }) : super(key: key);
 
-  // final bool isDense;
-  // final String inputPlaceholder;
-  // final Widget prefixIcon;
-  // final int maxLines;
-  // final bool disabled;
-  // final Function onTap;
-  // final Function onSaved;
-
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextFormField(
         validator: validator,
         decoration: InputDecoration(
-          filled: true,
-          fillColor: cardColor,
+          filled: isFilled,
+          fillColor: isFilled ? inputFilledColor : cardColor,
           suffixIcon: suffixIcon,
           hintText: hintText,
-          contentPadding: EdgeInsets.only(left: 0.0),
+          contentPadding: EdgeInsets.only(
+            left: isFilled ? 20.0 : 0.0,
+            top: 20.0,
+            bottom: 20.0,
+            right: 20.0,
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(isFilled ? 16.0 : 0.0),
+          ),
           hintStyle: TextStyle(
             color: subtitleColor,
             fontWeight: FontWeight.w400,
@@ -67,20 +71,25 @@ class XafeInputField extends StatelessWidget {
               style: BorderStyle.solid,
               width: 1.0,
             ),
+            borderRadius: BorderRadius.circular(isFilled ? 16.0 : 0.0),
           ),
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(
-              color: buttonColor.withOpacity(0.75),
+              color:
+                  isFilled ? Colors.transparent : buttonColor.withOpacity(0.75),
               style: BorderStyle.solid,
               width: 1.0,
             ),
+            borderRadius: BorderRadius.circular(isFilled ? 16.0 : 0.0),
           ),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
-              color: buttonColor.withOpacity(0.75),
+              color:
+                  isFilled ? Colors.transparent : buttonColor.withOpacity(0.75),
               style: BorderStyle.solid,
               width: 1.0,
             ),
+            borderRadius: BorderRadius.circular(isFilled ? 16.0 : 0.0),
           ),
           errorStyle: TextStyle(
             fontSize: 12.0,
@@ -91,11 +100,6 @@ class XafeInputField extends StatelessWidget {
         ),
         controller: controller,
         obscureText: isPassword ? true : false,
-        // style: TextStyle(
-        //   fontSize: 14.0,
-        //   color: Theme.of(context).textSelectionHandleColor.withOpacity(0.8),
-        //   fontWeight: FontWeight.bold,
-        // ),
       ),
     );
   }

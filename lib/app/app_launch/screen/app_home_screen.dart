@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../../cores/constants/colors.dart';
+import '../../../cores/constants/routes.dart';
 import '../../../cores/constants/styles.dart';
 import '../../../cores/widgets/xafe_button.dart';
 import '../widget/app_launch.wigets.dart';
@@ -39,7 +40,11 @@ class AppHomeScreen extends StatelessWidget {
                 right: 0.0,
                 child: Column(
                   children: [
-                    XafeButton(text: 'Login'),
+                    XafeButton(
+                      text: 'Login',
+                      onPressed: () =>
+                          Navigator.pushNamed(context, signInScreen),
+                    ),
                     SizedBox(height: 20.0),
                     BuildCreateAccountText(),
                     SizedBox(height: 40.0),

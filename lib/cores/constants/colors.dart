@@ -12,6 +12,12 @@ Color buttonColor = Color(0xFF0047FF);
 /// This is the default subtitle text Color
 Color subtitleColor = Color(0xFF9A96A4);
 
+/// This is the default subtitle text Color
+Color subColor = Color(0xFF757886);
+
+/// This is the default [inputFilledColor] Color
+Color inputFilledColor = Color(0xFFF8F8F9);
+
 /// This is the default background Color1
 Color backgroundColor1 = Color(0xFF3F74FF);
 
