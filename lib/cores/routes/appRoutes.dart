@@ -3,7 +3,7 @@ import 'dart:io' show Platform;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../app/app_home_screen.dart';
+import '../../app/app_launch/screen/app_home_screen.dart';
 import '../constants/routes.dart';
 
 /// App Generating routes
