@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'cores/constants/colors.dart';
 import 'cores/constants/routes.dart';
 import 'cores/routes/appRoutes.dart';
@@ -23,6 +24,7 @@ class XafeApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         scaffoldBackgroundColor: cardColor,
+        fontFamily: 'Euclid',
       ),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: generateRoute,
