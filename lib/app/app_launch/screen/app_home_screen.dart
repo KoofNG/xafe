@@ -39,14 +39,11 @@ class AppHomeScreen extends StatelessWidget {
                 right: 0.0,
                 child: Column(
                   children: [
-                    XafeButton(
-                      text: 'Login',
-                      // onPressed: () => Navigator.pushNamed(context, routeName) ,
-                    ),
+                    XafeButton(text: 'Login'),
                     SizedBox(height: 20.0),
-                    buildCreateAccountText(),
+                    BuildCreateAccountText(),
                     SizedBox(height: 40.0),
-                    buildAgreemeentText(),
+                    BuildAgreemeentText(),
                   ],
                 ),
               ),
