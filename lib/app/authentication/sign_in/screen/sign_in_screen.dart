@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../cores/constants/styles.dart';
-
-import '../../../cores/widgets/xafe_appbar.dart';
-import '../../../cores/widgets/xafe_button.dart';
-import '../../../cores/widgets/xafe_input.dart';
+import '../../../../cores/constants/styles.dart';
+import '../../../../cores/widgets/xafe_appbar.dart';
+import '../../../../cores/widgets/xafe_button.dart';
+import '../../../../cores/widgets/xafe_input.dart';
 import '../widgets/login_header.dart';
 
 /// [Signin] screen

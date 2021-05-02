@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import '../../../cores/constants/colors.dart';
-import '../../../cores/constants/styles.dart';
+import '../../../../cores/constants/colors.dart';
+import '../../../../cores/constants/styles.dart';
 
 /// [Login] header widget
 class LoginHeader extends StatelessWidget {

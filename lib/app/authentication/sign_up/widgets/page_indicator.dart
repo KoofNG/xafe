@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../../cores/constants/colors.dart';
-import '../../../cores/utilities/helpers.dart';
+import '../../../../cores/constants/colors.dart';
+import '../../../../cores/utilities/helpers.dart';
 
 /// Page Indicator
 class PageIndicator extends StatelessWidget {

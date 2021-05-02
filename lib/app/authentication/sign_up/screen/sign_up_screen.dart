@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import '../../../../cores/constants/styles.dart';
+import '../../../../cores/widgets/xafe_appbar.dart';
+import '../../../../cores/widgets/xafe_button.dart';
+import '../../../../cores/widgets/xafe_input.dart';
 
-import '../../../cores/constants/styles.dart';
-import '../../../cores/widgets/xafe_appbar.dart';
-import '../../../cores/widgets/xafe_button.dart';
-import '../../../cores/widgets/xafe_input.dart';
 import '../widgets/build_form.dart';
 import '../widgets/page_indicator.dart';
 
