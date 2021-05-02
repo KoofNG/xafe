@@ -123,7 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               }
                               return null;
                             },
-                            inputType: TextInputType.number,
+                            inputType: TextInputType.text,
                             controller: _passwordController,
                           ),
                         ),
