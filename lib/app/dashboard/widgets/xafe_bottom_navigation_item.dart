@@ -16,6 +16,9 @@ class XafeBottomNavigationItem extends StatelessWidget {
   /// to show on selected
   final Widget activeIcon;
 
+  ///
+  final Function onTap;
+
   /// [XafeBottomNavigationItem] constructor
   XafeBottomNavigationItem({
     Key key,
@@ -23,23 +26,27 @@ class XafeBottomNavigationItem extends StatelessWidget {
     this.label,
     this.selected = false,
     this.activeIcon,
+    this.onTap,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Expanded(child: selected ? activeIcon : icon),
-        SizedBox(height: 5.0),
-        Text(
-          label,
-          style: textStyle.copyWith(
-            fontSize: 12.0,
-            fontWeight: FontWeight.w400,
-            color: selected ? titleColor : subtitleColor,
+    return GestureDetector(
+      onTap: onTap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Expanded(child: selected ? activeIcon : icon),
+          SizedBox(height: 5.0),
+          Text(
+            label,
+            style: textStyle.copyWith(
+              fontSize: 12.0,
+              fontWeight: FontWeight.w400,
+              color: selected ? titleColor : subtitleColor,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
