@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
-import 'package:xafe/cores/constants/colors.dart';
-import 'package:xafe/cores/constants/routes.dart';
 
 import '../../../../../cores/constants/styles.dart';
 import '../../../../../cores/widgets/xafe_appbar.dart';

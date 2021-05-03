@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:xafe/cores/constants/colors.dart';
-import 'package:xafe/cores/constants/styles.dart';
-import '../../../../../cores/constants/routes.dart';
 
+import '../../../../../cores/constants/colors.dart';
+import '../../../../../cores/constants/routes.dart';
+import '../../../../../cores/constants/styles.dart';
 import '../../../../../cores/setups/baseviewmodel.dart';
 import '../../data/datasource/sign_up_service.dart';
 import '../../data/models/app_user.dart';
