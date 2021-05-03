@@ -131,7 +131,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           text: 'Next',
                           onPressed: () {
                             if (!_signUpformkey.currentState.validate()) return;
-                            model.submit();
+                            model.submit(context: context);
                           },
                         ),
                       )

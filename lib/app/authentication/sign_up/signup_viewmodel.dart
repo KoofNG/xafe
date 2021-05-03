@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:xafe/cores/constants/routes.dart';
 import '../../../cores/setups/baseviewmodel.dart';
 
 ///
@@ -31,10 +32,12 @@ class SignupViewModel extends XafeBaseViewModel {
   ///
   double getIndicatorWidth({BuildContext context}) {
     if (_stage == 0) {
-      return MediaQuery.of(context).size.width * 0.25;
+      return MediaQuery.of(context).size.width * 0.0;
     } else if (_stage == 1) {
-      return MediaQuery.of(context).size.width * 0.5;
+      return MediaQuery.of(context).size.width * 0.25;
     } else if (_stage == 2) {
+      return MediaQuery.of(context).size.width * 0.5;
+    } else if (_stage == 3) {
       return MediaQuery.of(context).size.width * 0.75;
     } else {
       return MediaQuery.of(context).size.width * 1.0;
@@ -42,7 +45,7 @@ class SignupViewModel extends XafeBaseViewModel {
   }
 
   ///
-  void submit() {
+  void buildProgressIndicator() {
     switch (_stage) {
       case 0:
         if (_fullNameController.value.text.isNotEmpty) {
@@ -69,6 +72,16 @@ class SignupViewModel extends XafeBaseViewModel {
         }
         break;
       default:
+        _stage = _stage;
+        notifyListeners();
+    }
+  }
+
+  ///
+  void submit({BuildContext context}) {
+    buildProgressIndicator();
+    if (_stage == 4) {
+      Navigator.pushNamed(context, dashboardScreen);
     }
   }
 }
