@@ -82,7 +82,7 @@ class SignInScreen extends StatelessWidget {
                 child: XafeButton(
                   text: 'Login',
                   onPressed: () {
-                    if (_signInformkey.currentState.validate()) return;
+                    if (!_signInformkey.currentState.validate()) return;
                     Navigator.pushNamed(context, dashboardScreen);
                   },
                 ),
