@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 import '../../../../cores/constants/colors.dart';
+import '../../../../cores/constants/routes.dart';
 import '../../../../cores/constants/styles.dart';
 
 /// [Categories]
@@ -23,7 +25,9 @@ class CategoriesScreen extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, addNewCategory);
+                  },
                   child: Container(
                     height: 50,
                     width: 50,
