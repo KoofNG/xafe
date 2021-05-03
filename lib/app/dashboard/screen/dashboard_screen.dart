@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import '../../../cores/constants/colors.dart';
 import '../widgets/xafe_animated_index.dart';
 import '../widgets/xafe_bottom_navigation_bar.dart';
+import 'budget/budget_screen.dart';
 import 'categories/categories_screen.dart';
 import 'home/home_screen.dart';
 
@@ -17,6 +18,7 @@ class DashboardScreen extends StatelessWidget {
         child: XafeAnimatedIndexedStack(
           index: 0,
           children: <Widget>[
+            BudgetScreen(),
             CategoriesScreen(),
             HomeScreen(),
           ],
