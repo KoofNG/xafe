@@ -1,13 +1,12 @@
 import 'package:flutter/widgets.dart';
-import 'view_state.dart';
 
 /// [ViewModel] for Xafe
 class XafeBaseViewModel extends ChangeNotifier {
   /// Inital value
-  ViewState appState = ViewState.idle;
+  bool appState = false;
 
   /// Set viewmodel state
-  void setState({ViewState state}) {
+  void setState({bool state}) {
     appState = state;
     notifyListeners();
   }

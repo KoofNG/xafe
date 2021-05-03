@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../../../cores/constants/colors.dart';
-import '../../../../cores/constants/styles.dart';
+import '../../../../../cores/constants/colors.dart';
+import '../../../../../cores/constants/styles.dart';
 
 /// Widget for building each step of the form
 class BuildForm extends StatelessWidget {

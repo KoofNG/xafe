@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 
-import '../../../../cores/constants/routes.dart';
-import '../../../../cores/constants/styles.dart';
-import '../../../../cores/widgets/xafe_appbar.dart';
-import '../../../../cores/widgets/xafe_base_widget.dart';
-import '../../../../cores/widgets/xafe_button.dart';
-import '../../../../cores/widgets/xafe_header.dart';
-import '../../../../cores/widgets/xafe_input.dart';
+import '../../../../../cores/constants/styles.dart';
+import '../../../../../cores/widgets/xafe_appbar.dart';
+import '../../../../../cores/widgets/xafe_base_widget.dart';
+import '../../../../../cores/widgets/xafe_button.dart';
+import '../../../../../cores/widgets/xafe_header.dart';
+import '../../../../../cores/widgets/xafe_input.dart';
 import '../viewmodel/sign_in_viewmodel.dart';
 
 /// [Signin] screen
@@ -18,7 +18,7 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return XafeBaseWidget<SigninViewModel>(
-      model: SigninViewModel(),
+      model: SigninViewModel(firebaseSignInService: Provider.of(context)),
       onModelReady: (model) {},
       builder: (context, model, child) {
         return Scaffold(
@@ -89,9 +89,10 @@ class SignInScreen extends StatelessWidget {
                     padding: EdgeInsets.only(bottom: 20.0),
                     child: XafeButton(
                       text: 'Login',
+                      busy: model.appState,
                       onPressed: () {
                         if (!_signInformkey.currentState.validate()) return;
-                        Navigator.pushNamed(context, dashboardScreen);
+                        model.signIn(context: context);
                       },
                     ),
                   ),

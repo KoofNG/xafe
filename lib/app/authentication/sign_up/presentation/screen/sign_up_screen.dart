@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:provider/provider.dart';
 
-import '../../../../cores/constants/styles.dart';
-import '../../../../cores/widgets/xafe_appbar.dart';
-import '../../../../cores/widgets/xafe_base_widget.dart';
-import '../../../../cores/widgets/xafe_button.dart';
-import '../../../../cores/widgets/xafe_input.dart';
-import '../signup_viewmodel.dart';
+import '../../../../../cores/constants/styles.dart';
+import '../../../../../cores/widgets/xafe_appbar.dart';
+import '../../../../../cores/widgets/xafe_base_widget.dart';
+import '../../../../../cores/widgets/xafe_button.dart';
+import '../../../../../cores/widgets/xafe_input.dart';
+import '../viewmodel/signup_viewmodel.dart';
 import '../widgets/build_form.dart';
 import '../widgets/page_indicator.dart';
 
@@ -22,7 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return XafeBaseWidget<SignupViewModel>(
-      model: SignupViewModel(),
+      model: SignupViewModel(firebaseSignUpService: Provider.of(context)),
       onModelReady: (model) {
         model.getIndicatorWidth(context: context);
       },
@@ -129,9 +130,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         padding: EdgeInsets.only(bottom: 20.0),
                         child: XafeButton(
                           text: 'Next',
-                          onPressed: () {
+                          busy: model.appState,
+                          onPressed: () async {
                             if (!_signUpformkey.currentState.validate()) return;
-                            model.submit(context: context);
+                            await model.submit(context: context);
                           },
                         ),
                       )
