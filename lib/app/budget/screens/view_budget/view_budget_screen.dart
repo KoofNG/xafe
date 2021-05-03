@@ -7,6 +7,7 @@ class ViewBudgetScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor1,
       body: SafeArea(
         child: Container(
           child: Column(
