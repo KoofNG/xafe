@@ -23,3 +23,6 @@ Color backgroundColor1 = Color(0xFF3F74FF);
 
 /// This is the default background Color1
 Color backgroundColor2 = Color(0xFF0047FF);
+
+/// Remove color
+Color orangeColor = Color(0xFFFF8514);

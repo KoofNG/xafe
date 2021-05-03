@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../cores/constants/routes.dart';
-import '../../../cores/constants/styles.dart' show textStyle;
+import '../../../../cores/constants/routes.dart';
+import '../../../../cores/constants/styles.dart';
 
 /// Returns Text widget for agreement
 class BuildAgreemeentText extends StatelessWidget {
