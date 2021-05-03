@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../app/authentication/app_launch/screen/app_home_screen.dart';
-import '../../app/authentication/sign_in/screen/sign_in_screen.dart';
-import '../../app/authentication/sign_up/screen/sign_up_screen.dart';
+import '../../app/authentication/sign_in/presentation/screen/sign_in_screen.dart';
+import '../../app/authentication/sign_up/presentation/screen/sign_up_screen.dart';
 import '../../app/budget/screens/add_budget/add_budget_screen.dart';
 import '../../app/budget/screens/edit_budget/edit_budget_screen.dart';
 import '../../app/budget/screens/view_budget/view_budget_screen.dart';
