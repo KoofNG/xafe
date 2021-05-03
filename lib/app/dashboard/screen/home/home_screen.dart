@@ -21,8 +21,54 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Container(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      // DropdownButtonFormField(items: items),
+                      DropdownButton<String>(
+                        hint: Padding(
+                          padding: EdgeInsets.symmetric(
+                            vertical: 15.0,
+                            horizontal: 5.0,
+                          ),
+                          child: Text(
+                            'Choose interval',
+                            style: textStyle.copyWith(
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.w400,
+                              color: cardColor,
+                            ),
+                          ),
+                        ),
+                        icon: Icon(
+                          Icons.arrow_drop_down,
+                          color: cardColor,
+                        ),
+                        style: textStyle.copyWith(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400,
+                          color: cardColor,
+                        ),
+                        dropdownColor: backgroundColor2,
+                        items: <String>[
+                          'This week',
+                          'This month',
+                          'This year',
+                        ].map((value) {
+                          return DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(
+                              value,
+                              style: textStyle.copyWith(
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.w400,
+                                color: cardColor,
+                              ),
+                            ),
+                            onTap: () {},
+                          );
+                        }).toList(),
+                        onChanged: (_) {},
+                      ),
                       GestureDetector(
                         onTap: () {
                           buildShowModalBottomSheet(context);
