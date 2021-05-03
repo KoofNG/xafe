@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:xafe/cores/constants/routes.dart';
+import '../../../cores/constants/routes.dart';
 import '../../../cores/setups/baseviewmodel.dart';
 
 ///
