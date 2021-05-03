@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../../cores/constants/colors.dart';
+import '../../../../cores/constants/colors.dart';
 
 /// [ViewBudgetScreen] screen to view a particular budget
 class ViewBudgetScreen extends StatelessWidget {

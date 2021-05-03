@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../../cores/constants/colors.dart';
-import '../../../cores/widgets/xafe_appbar.dart';
-import '../../../cores/widgets/xafe_button.dart';
-import '../../../cores/widgets/xafe_header.dart';
-import '../../../cores/widgets/xafe_input.dart';
+import '../../../../cores/constants/colors.dart';
+import '../../../../cores/widgets/xafe_appbar.dart';
+import '../../../../cores/widgets/xafe_button.dart';
+import '../../../../cores/widgets/xafe_header.dart';
+import '../../../../cores/widgets/xafe_input.dart';
 
 /// [EditBudgetScreen] screen to add a new budget
 class EditBudgetScreen extends StatelessWidget {
