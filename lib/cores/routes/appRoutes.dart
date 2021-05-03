@@ -3,6 +3,11 @@ import 'dart:io' show Platform;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:xafe/app/budget/add_budget/add_budget_screen.dart';
+import 'package:xafe/app/budget/edit_budget/edit_budget_screen.dart';
+import 'package:xafe/app/budget/view_budget/view_budget_screen.dart';
+import 'package:xafe/app/categories/screens/add_category_screen.dart';
+import 'package:xafe/app/expenses/screens/add_expenses_screen.dart';
 
 import '../../app/authentication/app_launch/screen/app_home_screen.dart';
 import '../../app/authentication/sign_in/screen/sign_in_screen.dart';
@@ -27,6 +32,26 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
     case dashboardScreen:
       return _buildPageRoute(page: DashboardScreen());
+      break;
+
+    case addNewCategory:
+      return _buildPageRoute(page: AddCategoryScreen());
+      break;
+
+    case addBudget:
+      return _buildPageRoute(page: AddBudgetScreen());
+      break;
+
+    case editBudget:
+      return _buildPageRoute(page: EditBudgetScreen());
+      break;
+
+    case viewBudget:
+      return _buildPageRoute(page: ViewBudgetScreen());
+      break;
+
+    case addExpense:
+      return _buildPageRoute(page: AddExpenseScreen());
       break;
 
     default:
