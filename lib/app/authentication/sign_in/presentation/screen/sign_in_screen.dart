@@ -3,7 +3,6 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../cores/constants/routes.dart';
 import '../../../../../cores/constants/styles.dart';
 import '../../../../../cores/widgets/xafe_appbar.dart';
 import '../../../../../cores/widgets/xafe_base_widget.dart';

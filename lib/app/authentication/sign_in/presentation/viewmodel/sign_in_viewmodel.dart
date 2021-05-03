@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:xafe/app/authentication/sign_in/data/models/login_user.dart';
-import 'package:xafe/cores/constants/colors.dart';
-import 'package:xafe/cores/constants/routes.dart';
-import 'package:xafe/cores/constants/styles.dart';
 
+import '../../../../../cores/constants/colors.dart';
+import '../../../../../cores/constants/routes.dart';
+import '../../../../../cores/constants/styles.dart';
 import '../../../../../cores/setups/baseviewmodel.dart';
 import '../../data/datasources/sign_in_service.dart';
+import '../../data/models/login_user.dart';
 
 /// [SigninViewModel]
 class SigninViewModel extends XafeBaseViewModel {
