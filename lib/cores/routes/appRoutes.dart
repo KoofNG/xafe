@@ -3,16 +3,16 @@ import 'dart:io' show Platform;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:xafe/app/budget/add_budget/add_budget_screen.dart';
-import 'package:xafe/app/budget/edit_budget/edit_budget_screen.dart';
-import 'package:xafe/app/budget/view_budget/view_budget_screen.dart';
-import 'package:xafe/app/categories/screens/add_category_screen.dart';
-import 'package:xafe/app/expenses/screens/add_expenses_screen.dart';
 
 import '../../app/authentication/app_launch/screen/app_home_screen.dart';
 import '../../app/authentication/sign_in/screen/sign_in_screen.dart';
 import '../../app/authentication/sign_up/screen/sign_up_screen.dart';
+import '../../app/budget/add_budget/add_budget_screen.dart';
+import '../../app/budget/edit_budget/edit_budget_screen.dart';
+import '../../app/budget/view_budget/view_budget_screen.dart';
+import '../../app/categories/screens/add_category_screen.dart';
 import '../../app/dashboard/screen/dashboard_screen.dart';
+import '../../app/expenses/screens/add_expenses_screen.dart';
 import '../constants/routes.dart';
 
 /// App Generating routes
