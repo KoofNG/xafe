@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "166010812602",
+    "project_id": "xafe-f9cf9",
+    "storage_bucket": "xafe-f9cf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166010812602:android:82f42f31f0e0761727ea83",
+        "android_client_info": {
+          "package_name": "com.app.xafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166010812602-6c5gpves2oag565dq9c6cch9pa7gmfe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.xafe",
+            "certificate_hash": "0a2cbd9457b4ba392f41acb8c68960ef34ed005c"
+          }
+        },
+        {
+          "client_id": "166010812602-pvi6pdih3g2tue890mhuk2m45p11ld7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyYB9qNoNqevlHEX_CI1WCQKcwwkQDsIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166010812602-pvi6pdih3g2tue890mhuk2m45p11ld7k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166010812602-3m080i6otqo0ds0qgkdkc9rv8q9s7e90.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.xafe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
